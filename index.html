@@ -12,17 +12,17 @@
 	<title>Blog de Turismo</title>
 </head>
 
-<body class="turismo-body parallax-container">
+<body class="turismo-body">
 	
-	<div class="teal lighten-1" style="height: 100px">
+	<div class="contenedor">
 		
-		<div class="row parallax">
+		<div class="row">
 			<div class="col m1"></div>
 			<div class="col m3"></div>
 			<div class="col m8"></div>
 		</div>
 		
-		<header class="row nav-extended navbar-fixed parallax">
+		<header class="row">
 			<div class="col m1 hide-on-small-and-down"></div>
 			<div class="col s3 m3">
 				<div class="row">
@@ -33,16 +33,16 @@
 				<a class="waves-effect waves-light btn" href="#"><i class="material-icons left">home</i><span class="hide-on-small-and-down">Inicio</span></a>
 				<a class="waves-effect waves-light btn" href="#"><i class="material-icons left">location_on</i><span class="hide-on-small-and-down">Estuve En...</span></a>
 				<a class="waves-effect waves-light btn" href="#"><i class="material-icons left">grade</i><span class="hide-on-small-and-down">Mejores Viajes</span></a>
-				<a class="waves-effect waves-light btn" href="#"><i class="material-icons left">chat_bubble</i><span class="hide-on-small-and-down">Recomendaciones</span></a>				
+				<a class="waves-effect waves-light btn" href="#"><i class="material-icons left">chat_bubble</i><span class="hide-on-small-and-down">Recomendaciones</span></a>
 			</div>
 		</header>
 		
-		<div class="row parallax">
+		<div class="row">
 			<div class="col m2 hide-on-small-and-down"></div>
 			<div class="col s12 m10"><span class="white-text text-darken-2"><h5>Slogan: Creando mi propio camino</h5></span></div>
 		</div>
 		
-		<div class="row parallax">
+		<div class="row">
 			<div class="col m1 center-align hide-on-small-and-down">
 				<div><a class="waves-effect waves-light" href="#"><img src="img/fb.png"></a></div>
 				<div><a class="waves-effect waves-light" href="#"><img src="img/ig.png"></a></div>
@@ -52,28 +52,33 @@
 			<div class="col s12 m11">
 				<div class="row">
 					<div class="col m4">
-						<img width="100%" src="img/panachi.jpg">
-						<img width="100%" src="img/parapente.jpg">
+						<img class="responsive-img" width="100%" src="img/panachi.jpg">
+						<img class="responsive-img" width="100%" src="img/parapente.jpg">
 					</div>
 					<div class="col m4">
-						<img width="100%" src="img/sagrada-familia.jpg">						
+						<img class="responsive-img" width="100%" src="img/sagrada-familia.jpg">						
 					</div>
 					<div class="col m4">
-						<img width="100%" src="img/barichara.jpg">
-						<img width="100%" src="img/sangil-2.jpg">
+						<img class="responsive-img" width="100%" src="img/barichara.jpg">
+						<img class="responsive-img" width="100%" src="img/sangil-2.jpg">
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="row parallax">
+		<div class="row">
+		
 			<div class="col m9">
 				
 				<div class="row card">
 					<div class="col m12">
 						<h4>San Gil - Tierra De Aventura</h4>
-						<h6> 13 de febrero de 2016 - Bucaramanga, Santander, Colombia</h6>
-						<img class="materialboxed" width="100%" src="img/sangil.jpg">
+						<div>
+							<a class="btn btn-small waves-effect waves-light blue-grey" style="border-radius: 15px" href="#"><i class="material-icons right">event</i>13 de febrero de 2016</a>
+							<a class="btn btn-small waves-effect waves-light blue-grey" style="border-radius: 15px" href="#"><i class="material-icons right">location_on</i>Bucaramanga, Santander, Colombia</a>						
+						</div>
+						<br>						
+						<img class="materialboxed responsive-img" width="100%" src="img/sangil.jpg">
 						<p>
 							Montañas, ríos y quebradas hacen de San Gil un importante destino de ecoturismo y de deportes de aventura en el departamento de Santander. En este municipio, fundado en 1689, el río Fonce es una arteria que les ha traído desarrollo a sus habitantes gracias a la práctica de actividades como el rafting, que atrae a viajeros de toda Colombia y de otros países.<br><br>
 							En San Gil se pueden vivir emociones intensas al volar en parapente y al descender por rocas en rappel, entre otras actividades. Aquí se puede caminar bajo ceibas y otros árboles que refrescan con su sombra el ambiente del Parque El Gallineral y también existe la opción para que desde principiantes hasta expertos practiquen rafting en las aguas del río Fonce. <br><br>
@@ -104,46 +109,40 @@
 							<textarea id="textarea1" class="materialize-textarea"></textarea>
 						  	<label for="textarea1"><label for="textarea1">Textarea</label></label>						
 						</div>
-					</form>					
-        
+					</form>			
+        			
+        			<div class="row center-align">
+        				<div class="col s12 m12">
+        					<button class="btn waves-effect waves-light" type="submit" name="action" id="enviar">Enviar<i class="material-icons right">send</i></button>
+        				</div>
+        			</div>
+        			
 				</div>
 								
 			</div>
 			
-			<div class="col m3">
-							
+			<div class="col s10 m3 offset-s1">
+				
 				<div class="row card">
 					<div class="col m12 center-align" style="padding-top: 5px">
 						<img class="circle" width="50%" src="img/hombre.png">
-						<h5>Perfil del Autor</h5>					
+						<h5>Perfil del Autor</h5>
+						<div class="divider"></div>					
 						<p>
 							Scrollspy es un pulgin jQuery que hace seguimiento de ciertos elementos y en cual elemento esta centrada actualmente la pantalla del usuario. Nuestro demo principal de esto es nuestra tabla de contenidos en cada pagina de la documentación a lado derecho de la pagina. Al hacer clic en estos enlaces también se desplazará a la página de ese elemento.
 						</p>
 					</div>					
 				</div>
-								
-			</div>	
+												
+			</div>
+				
 		</div>
-		
-		
-		
-		
-		
-			
-		
-						
-	
-	
-	
-	
-	
-
-	
 	
 	
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
+	
 
 </body>
 

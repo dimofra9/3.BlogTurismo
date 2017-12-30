@@ -2,13 +2,9 @@
 /* CSS Document */
 
 /*estilo para fondo*/
-.parallax-container {
-      height: "your height here";
-    }
-
 .turismo-body {
 	background-image: url(../img/canon-del-chicamocha.jpg);
-	background-attachment: scroll;
+	background-attachment: fixed;
   	background-repeat: no-repeat;
   	background-position: center center;
   	background-size: cover;
@@ -18,4 +14,9 @@
 
 p {
 	text-align: justify;
+}
+
+#enviar {
+	text-align: center;
+	margin-bottom: 10px;
 }
